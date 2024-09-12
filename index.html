@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script defer src="main.js"></script></head>
+
+<body>
+    <nav>
+        <div class="title-option">
+            <div class="title">
+                <h1>CheckMark</h1>
+            </div>
+            <div class="options">
+                <form>
+                    <label for="addProject" id="addProjectLabel">Project Name: </label>
+                    <input type="text" name="addProject" id="addProjectInput" required>
+                    <button id="addProjectButton" type="button">Add Project</button>
+                </form>
+            </div>
+        </div>
+        <div class="project-section">
+
+        </div>
+
+    </nav>
+    <section>
+        <div class="project-name">
+            <h2 id="project-title"></h2>
+        </div>
+
+
+        <div class="project-form">
+            <form id="add-todo-form">
+                <label for="project-dropdown">Create Task:</label>
+                <select id="project-dropdown" required>
+                    <option value="" disabled selected>Select a project</option>
+                </select>
+                <br>
+                <input type="text" id="todo-title" placeholder="Task Title" required>
+                <input type="text" id="todo-desc" placeholder="Task Description">
+                <input type="date" id="todo-dueDate" required>
+                <select id="todo-priority" required>
+                    <option value="High">High</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Low">Low</option>
+                </select>
+                <button type="button" id="add-todo-button">Add Task</button>
+            </form>
+        </div>
+        <div id="tasks-section"></div>
+
+    </section>
+
+</body>
+
+</html>
